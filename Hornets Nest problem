@@ -1,0 +1,19 @@
+'my solution to Hornets nest problem parts 1 and 2'
+Sub hornets()
+    Dim i As Integer
+    Dim x As Integer
+    Dim Count As Integer
+    For i = 1 To 6
+    For x = 1 To 7
+    If Cells(i, x).Value = "Hornets" Then
+    Cells(i, x).Value = "Bugs"
+    Count = Count + 1
+    
+    
+    End If
+    Next x
+    Next i
+    
+    Range("L5").Value = Count
+    
+End Sub
