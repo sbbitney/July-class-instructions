@@ -1,0 +1,30 @@
+grader vba problem
+
+Sub Gradebook():
+
+If Cells(2, 2).Value >= 90 Then
+Cells(2, 3).Interior.ColorIndex = 4
+Cells(2, 3).Value = "Pass"
+Cells(2, 4).Value = "A"
+
+
+ElseIf Cells(2, 2).Value >= 80 Then
+Cells(2, 3).Interior.ColorIndex = 4
+Cells(2, 4).Value = "B"
+
+ElseIf Cells(2, 2).Value >= 70 Then
+Cells(2, 3).Interior.ColorIndex = 3
+Cells(2, 4).Value = "C"
+
+Else
+Cells(2, 3).InteriorColorIndex = 2
+Cells(2, 4).Value = "F"
+
+'convert number grade to a letter
+'If value of cell (x,y) = Z Then
+'Cells(a,b,).Value = "grade"
+'color is changed too
+
+End If
+
+End Sub
