@@ -1,0 +1,19 @@
+Sub Star_counter():
+Dim Count As Integer
+Dim Value As Integer
+Count = 0
+For K = 2 To 51
+    For j = 4 To 8
+
+If (Cells(K, j).Value = "Full-Star") Then
+    Count = Count + 1
+
+End If
+Cells(K, 9).Value = Count
+
+
+Next j
+Next K
+
+
+End Sub
